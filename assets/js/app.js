@@ -83,7 +83,7 @@ console.log(newCountry, newCurrency);
 
 for (let i = 0; i <= newCountry.length; i++) {
     for (let j = 0; j <= newCurrency.length; j++) {
-        if(_.isEqual(newCountry[i]?.countryC, newCurrency[j]?.currencyCode)) {
+        if(newCountry[i]?.countryC == newCurrency[j]?.currencyCode) {
             finalName.push(newCurrency[j]?.nameCc);
             finalCode.push(newCurrency[j]?.currencyCode);
             finalRates.push(newCurrency[j]?.rateCc);
