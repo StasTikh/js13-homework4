@@ -104,7 +104,7 @@ infoPlace.innerHTML = finishCode.map (item => `
                     <h5>${item.finalName}</h5>
                     
                     <div class="flex-grow-1 ms-5 w-25">
-                        <span>${item.finalRate}
+                        <h5>${item.finalRate}</h5>
                     </div>
                         <img class="img-thumbnail m-1  border border-2" src="${item.finalFlag}" title="${item.countryName}"" style= "width: 100px; height:100px">
                 </div>`
