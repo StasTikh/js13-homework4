@@ -50,10 +50,10 @@ for (let i = 1; i <= 4; i++){
 console.log(outputArr);
 
 infoPlace.innerHTML = outputArr.map (item => `
-                <div id="countryCard" class="text-center border border-3 m-3 p-1 w-75 mx-auto row row-cols-lg-1">    
-                <h5 class="m-1"> ${item.txt} = ${item.rates} UAH</h5>
+                <div id="countryCard" class="border border-3 m-3 p-1 w-25">    
+                <h6 class="m-1"> ${item.txt} = ${item.rates} UAH</h6>
                 <div class="ms-3">
-                    ${item.countries.map(oneFlag => `<img src="${oneFlag.flag}" style="width: 100px; height: 50px" title="${oneFlag.name}" class="m-2 border border-2">`).join('')}
+                    ${item.countries.map(oneFlag => `<img src="${oneFlag.flag}" style="width: 3rem; height: 1.5rem" title="${oneFlag.name}" class="m-2 border border-2">`).join('')}
                 </div>
                 </div>`
 ).join("");
